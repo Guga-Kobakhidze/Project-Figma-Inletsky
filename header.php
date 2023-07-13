@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include "./headFootVar.php" ?>
 
 <head>
     <meta charset="UTF-8" />
@@ -7,8 +8,7 @@
     <title>Inletsky</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,14 +18,7 @@
             <img src="assets/images/logo.svg" alt="logo" />
             <nav class="nav">
                 <ul>
-                    <li>
-                        <a href="./index.php">SOLUTIONS <i class="bx bx-chevron-down"></i></a>
-                    </li>
-                    <li>
-                        <a href="./secondindex.php">DEVELOPERS <i class="bx bx-chevron-down"></i></a>
-                    </li>
-                    <li><a href="./thirdindex.html">CUSTOMERS</a></li>
-                    <li><a href="#">BLOGS</a></li>
+                    <?php getHeader($header); ?>
                 </ul>
             </nav>
             <div class="buttons">
