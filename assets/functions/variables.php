@@ -235,3 +235,112 @@ function getCombinedLogos($brandLogos1, $brandLogos2, $brandLogos3)
     }
     return $combinedLogos;
 };
+
+
+$sliderCarousel = [
+    'first' => [
+        'img1' => [
+            'assets/images/secondcard.svg', 'assets/images/firstcard.svg" style="height: 360px;"',
+            'assets/images/thirdcard.svg'
+        ],
+        'img2' => [
+            'assets/images/firstcard.svg', 'assets/images/thirdcard.svg',
+            'assets/images/secondcard.svg',
+        ],
+        'img3' => [
+            'assets/images/thirdcard.svg', 'assets/images/secondcard.svg',
+            'assets/images/firstcard.svg" style="height: 360px;"',
+        ],
+        'button' => [
+            'Product Update', 'Product Update', 'Product Update',
+        ],
+        'title' => [
+            '3D Networking', '2D Networking', '2D + 3D Networking',
+        ],
+        'text' => [
+            'GL JS is engineered to render even the most detailed, <br>
+            feature-dense maps at 60 FPS on
+            both desktop and mobile <br>devices.',
+            'GL JS is engineered to render even the most detailed, <br>
+            feature-dense maps at 60 FPS on',
+            'GL JS is engineered to render even the most detailed, <br>
+            feature-dense maps at 60 FPS on
+            both desktop and mobile <br>devices.
+            detailed, <br>
+            feature-dense maps at 60 FPS on',
+        ],
+        'link' => [
+            'Explore more →', 'Explore more →', 'Explore more →',
+        ],
+    ]
+];
+
+$sliderCarousel1 = [
+    'first' => [
+        'img1' => [
+            'assets/images/left.svg', 'assets/images/middle.svg" style="height: 360px;"',
+            'assets/images/right.svg'
+        ],
+        'img2' => [
+            'assets/images/middle.svg', 'assets/images/right.svg',
+            'assets/images/left.svg',
+        ],
+        'img3' => [
+            'assets/images/right.svg', 'assets/images/left.svg',
+            'assets/images/middle.svg" style="height: 360px;"',
+        ],
+        'button' => [
+            'Microsoft', 'Microsoft', 'Microsoft',
+        ],
+        'title' => [
+            'Global Reader', 'Middle Reader', 'Senior Reader',
+        ],
+        'text' => [
+            'A comprehensive production data exchange software <br />solution
+            that gives you Realtime information on your <br />production
+            capacity.',
+            'A comprehensive production data exchange software <br />solution
+            that gives you Realtime .',
+            'A comprehensive production data exchange software <br />solution
+            that gives you Realtime information on your <br />production
+            capacity. production capacity',
+        ],
+        'link' => [
+            'view portfolio →', 'view portfolio →', 'view portfolio →',
+        ],
+    ]
+];
+
+function getSliderCarousel($sliderCarousel, $sliderCarousel1)
+{
+    $sliders = array_merge($sliderCarousel, $sliderCarousel1);
+    for ($i = 0; $i < sizeof($sliders['first']['img1']); $i++) {
+        $slider = $sliders['first'];
+        if ($i == 0) {
+            $class = 'class="slide" data-active';
+        } else {
+            $class = 'class="slide"';
+        }
+        echo '<li ' . $class . ' >
+        <div class="another_card">
+            <img class="another1" data-carousel-button="prev" src="' . $slider['img1'][$i] .  '" alt="card" />
+        </div>
+        <div>
+            <img class="card_img-1" src="' . $slider['img2'][$i] .  '" alt="">
+            <div class="card">
+                <div class="btn btn2">
+                    <img src="assets/images/btnclick.svg" alt="btn" />
+                    <a href="#">' . $slider['button'][$i] . ' </a>
+                </div>
+                <h3> ' . $slider['title'][$i] .  ' </h3>
+                <p>' . $slider['text'][$i] .  '</p>
+                <a href="#">' . $slider['link'][$i] .  '</a>
+            </div>
+        </div>
+        <div class="another_card">
+            <img class="another2" data-carousel-button="next" src="' . $slider['img3'][$i] .  '" alt="card" />
+        </div>
+    </li>';
+    }
+    return $slider;
+}

@@ -1,5 +1,5 @@
 <?php include_once "./header.php" ?>
-<?php include "./variables.php" ?>
+<?php include "./assets/functions/variables.php" ?>
 
 <main class="main">
     <section class="main_section">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section class="second_section">
+    <section class="second_section-page">
         <div class="second_section-content">
             <div class="btn btn2">
                 <a href="#">Explore what’s new with inletsky
@@ -279,31 +279,16 @@
             <p>Build. Launch. Grow</p>
         </div>
         <div class="second_section second_page">
-            <div class="carousel_cards">
-                <div class="another_card">
-                    <img class="another1" src="assets/images/right.svg" alt="card" />
+            <div class="container">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev"><img
+                            src="assets/images/arrowleft.svg" alt="arrow" /></button>
+                    <button class="carousel-button next" data-carousel-button="next"><img
+                            src="assets/images/arrowright.svg" alt="arrow" /></button>
+                    <ul data-slides>
+                        <?php getSliderCarousel($sliderCarousel1, []); ?>
+                    </ul>
                 </div>
-                <div class="card">
-                    <img class="card_img-1" src="assets/images/middle.svg" alt="" />
-                    <div class="btn btn2">
-                        <img src="assets/images/btnclick.svg" alt="btn" />
-                        <a href="#">Microsoft</a>
-                    </div>
-                    <h3>Global Reader</h3>
-                    <p>
-                        A comprehensive production data exchange software <br />solution
-                        that gives you Realtime information on your <br />production
-                        capacity.
-                    </p>
-                    <a href="#">view portfolio →</a>
-                </div>
-                <div class="another_card">
-                    <img class="another2" src="assets/images/left.svg" alt="card" />
-                </div>
-            </div>
-            <div class="arrow_imgs">
-                <a href=""><img src="assets/images/arrowleft.svg" alt="arrow" /></a>
-                <a href=""><img src="assets/images/arrowright.svg" alt="arrow" /></a>
             </div>
         </div>
     </section>

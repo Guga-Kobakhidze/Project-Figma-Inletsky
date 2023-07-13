@@ -1,5 +1,5 @@
 <?php include_once "./header.php" ?>
-<?php include "./variables.php" ?>
+<?php include "./assets/functions/variables.php" ?>
 <main class="main">
     <section class="main_section">
         <div class="main_section-content">
@@ -21,31 +21,16 @@
         </div>
     </section>
     <section class="second_section">
-        <div class="carousel_cards">
-            <div class="another_card">
-                <img class="another1" src="assets/images/secondcard.svg" alt="card" />
+        <div class="container">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg"
+                        alt="arrow" /></button>
+                <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg"
+                        alt="arrow" /></button>
+                <ul data-slides>
+                    <?php getSliderCarousel($sliderCarousel, []); ?>
+                </ul>
             </div>
-            <div class="card">
-                <img class="card_img-1" src="assets/images/firstcard.svg" alt="">
-                <div class="btn btn2">
-                    <img src="assets/images/btnclick.svg" alt="btn" />
-                    <a href="#">Product Update</a>
-                </div>
-                <h3>3D Networking</h3>
-                <p>
-                    GL JS is engineered to render even the most detailed,
-                    <br />feature-dense maps at 60 FPS on both desktop and mobile
-                    <br />devices.
-                </p>
-                <a href="#">Explore more →</a>
-            </div>
-            <div class="another_card">
-                <img class="another2" src="assets/images/thirdcard.svg" alt="card" />
-            </div>
-        </div>
-        <div class="arrow_imgs">
-            <a href=""><img src="assets/images/arrowleft.svg" alt="arrow" /></a>
-            <a href=""><img src="assets/images/arrowright.svg" alt="arrow" /></a>
         </div>
     </section>
     <section class="third_section">
@@ -60,18 +45,18 @@
             <div class="brand_logos">
                 <div class="brand_logo-line">
                     <?php
-          getCombinedLogos($brandLogos1, [], []);
-          ?>
+                    getCombinedLogos($brandLogos1, [], []);
+                    ?>
                 </div>
                 <div class="brand_logo-line">
                     <?php
-          getCombinedLogos($brandLogos2, [], []);
-          ?>
+                    getCombinedLogos($brandLogos2, [], []);
+                    ?>
                 </div>
                 <div class="brand_logo-line">
                     <?php
-          getCombinedLogos($brandLogos3, [], []);
-          ?>
+                    getCombinedLogos($brandLogos3, [], []);
+                    ?>
                 </div>
             </div>
             <a class="link_center" href="#">View customere stories →</a>
@@ -80,9 +65,9 @@
     <section class="fourth_section">
         <div class="fourth_section-grid">
             <?php
-      for ($i = 0; $i < count($gridContent[0]); $i++) {
-        $content = $gridContent[0];
-        echo '<div class="grid_content">
+            for ($i = 0; $i < count($gridContent[0]); $i++) {
+                $content = $gridContent[0];
+                echo '<div class="grid_content">
                     <div class="grid_card">
                         <div class="btn btn2">
                             <img src="assets/images/btnclick.svg" alt="btn" />
@@ -94,8 +79,8 @@
                     </div>
                     <img src="' . $content['imgs'][$i] . '" />
                 </div>';
-      };
-      ?>
+            };
+            ?>
         </div>
     </section>
     <section class="Fifth_section">
@@ -114,8 +99,8 @@
         <div class="fifth_section-cards">
 
             <?php
-      for ($i = 0; $i < 6; $i++) {
-        echo '<div class="fv_card">
+            for ($i = 0; $i < 6; $i++) {
+                echo '<div class="fv_card">
                     <div class="card_img">
                         <img src=" ' . $fv_card[0]['img'] . ' " alt="joe" />
                         <h4>' . $fv_card[0]['title'] . '</h4>
@@ -123,8 +108,8 @@
                     <p>' . $fv_card[0]['text'] . '</p>
                     <img src="' . $fv_card[0]['stars'] . '" />
                 </div>';
-      };
-      ?>
+            };
+            ?>
 
         </div>
         <div class="arrow_imgs fv_card-arrow">
@@ -136,9 +121,9 @@
         <div class="fourth_section-grid">
 
             <?php
-      for ($i = 0; $i < sizeof($gridContents[0]['links']); $i++) {
-        $contents = $gridContents[0];
-        echo '<div class="grid_content grid_content-sixth">
+            for ($i = 0; $i < sizeof($gridContents[0]['links']); $i++) {
+                $contents = $gridContents[0];
+                echo '<div class="grid_content grid_content-sixth">
               <div class="grid_card">
                   <div class="btn btn2">
                       <img src="assets/images/btnclick.svg" alt="btn" />
@@ -150,8 +135,8 @@
               </div>
               <img src="' . $contents['imgs'][$i] . '" alt="gridimg" />
           </div>';
-      }
-      ?>
+            }
+            ?>
 
         </div>
     </section>
@@ -167,16 +152,16 @@
             <div class="text_borders">
 
                 <?php
-        for ($i = 0; $i < sizeof($borders['title']); $i++) {
-          echo '<div class="border"> 
+                for ($i = 0; $i < sizeof($borders['title']); $i++) {
+                    echo '<div class="border"> 
                 <div class="title_border">
                   <h3>' . $borders['title'][$i] . '</h3>
                   <img src="' . $borders['img'][$i] . '" alt="+" />
                 </div>
                   <p class="text_border">' . $borders['text'][$i] . '</p>
                 </div>';
-        };
-        ?>
+                };
+                ?>
 
             </div>
         </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "./headFootVar.php" ?>
+<?php include "./assets/functions/headFootVar.php" ?>
 
 <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,9 @@
     <title>Inletsky</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
