@@ -70,3 +70,18 @@ function getFooter($footer)
     }
     return $footer;
 }
+
+
+$icons = [
+    '<a href="#"><i class="bx bxl-discord-alt"></i></a>', '<a href="#"><i class="bx bxl-twitter"></i></a>',
+    '<a href="#"><i class="bx bxl-linkedin"></i></a>', '<a href="#"><i class="bx bxl-facebook"></i></a>',
+    '<a href="#"><i class="bx bxl-instagram-alt"></i></a>'
+];
+
+function getIcons($icons)
+{
+    foreach ($icons as $icon) {
+        echo $icon;
+    }
+    return $icon;
+}

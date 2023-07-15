@@ -13,11 +13,7 @@
                     <a href="#">Security</a>
                 </div>
                 <div class="terms icons">
-                    <a href="#"><i class="bx bxl-discord-alt"></i></a>
-                    <a href="#"><i class="bx bxl-twitter"></i></a>
-                    <a href="#"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#"><i class="bx bxl-facebook"></i></a>
-                    <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                    <?php getIcons($icons); ?>
                 </div>
             </div>
         </div>

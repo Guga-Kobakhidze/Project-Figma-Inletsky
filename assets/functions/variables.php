@@ -344,3 +344,53 @@ function getSliderCarousel($sliderCarousel, $sliderCarousel1)
     }
     return $slider;
 }
+
+$mainTitle = [
+    'link' => 'Explore what’s new with inletsky',
+    'title' => 'BrainNet. GL JS',
+    'text' => 'BrainNet. GL JS is a Networking library for vector networking on the
+            Web. Its performance, real-<br />time styling, and interactivity
+            features set the bar for anyone building fast, immersive tech on the
+            <br />web.',
+];
+
+$section1 = [
+    'link' => 'Tell us what to explore',
+    'title' => 'Testimonials',
+    'text' => 'Search and geocoding is tied to everything we build — maps,
+            navigation, AR — <br />
+            and underlies every app that helps humans explore their world.',
+];
+
+$section2 = [
+    'link' => 'You,re Good to Go',
+    'title' => 'Ready to Get Started',
+    'text' => 'Create an account or talk to one of our experts.'
+];
+
+
+
+
+function getSections($mainTitle)
+{
+    echo '<div class="btn btn2">
+            <a href="#">' . $mainTitle['link'] . '
+            <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+            <h1>' . $mainTitle['title'] . '</h1>
+            <p>' . $mainTitle['text'] . '</p>';
+
+    return $mainTitle;
+}
+
+function getsection($section1, $section2)
+{
+    $mergeSection = array_merge($section1, $section2);
+    echo '<div class="btn btn2">
+            <img src="assets/images/btnclick.svg" alt="btn" />
+            <a href="#">' . $mergeSection['link'] . '</a>
+        </div>
+            <h1 class="content_title">' . $mergeSection['title'] . '</h1>
+            <p>' . $mergeSection['text'] . '</p>';
+    return $mergeSection;
+}
