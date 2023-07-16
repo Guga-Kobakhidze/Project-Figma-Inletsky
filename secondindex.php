@@ -1,6 +1,6 @@
 <?php include_once "./header.php" ?>
 <?php include "./assets/functions/variables.php" ?>
-
+<img class="BG_image" src="assets/images/secondBG.png" alt="BG">
 <main class="main">
     <section class="main_section">
         <div class="main_section-contents">
@@ -281,10 +281,8 @@
         <div class="second_section second_page">
             <div class="container">
                 <div class="carousel" data-carousel>
-                    <button class="carousel-button prev" data-carousel-button="prev"><img
-                            src="assets/images/arrowleft.svg" alt="arrow" /></button>
-                    <button class="carousel-button next" data-carousel-button="next"><img
-                            src="assets/images/arrowright.svg" alt="arrow" /></button>
+                    <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg" alt="arrow" /></button>
+                    <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg" alt="arrow" /></button>
                     <ul data-slides>
                         <?php getSliderCarousel($sliderCarousel1, []); ?>
                     </ul>
@@ -429,8 +427,7 @@
                                 <input type="email" name="email" placeholder="Email*" id="email" />
                             </div>
                             <input type="text" name="question" placeholder="What are you seeking for?" id="question" />
-                            <input type="text" name="question" placeholder="How did you hear about Inletsky?"
-                                id="question" />
+                            <input type="text" name="question" placeholder="How did you hear about Inletsky?" id="question" />
                             <textarea name="massege" id="massege" placeholder="Massege"></textarea>
                             <div class="checkbox">
                                 <input type="checkbox" name="checkbox" id="checkbox" />

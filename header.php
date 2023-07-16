@@ -8,13 +8,11 @@
     <title>Inletsky</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="./assets/script.js" defer></script>
 </head>
 
 <body>
-    <img class="BG_image" src="assets/images/Inletsky.png" alt="BG">
     <header class="header">
         <div class="header_section">
             <img src="assets/images/logo.svg" alt="logo" />

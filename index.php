@@ -1,5 +1,6 @@
 <?php include_once "./header.php" ?>
 <?php include "./assets/functions/variables.php" ?>
+<img class="BG_image" src="assets/images/Inletsky.png" alt="BG">
 <main class="main">
     <section class="main_section">
         <div class="main_section-content">
@@ -96,7 +97,6 @@
     </section>
     <section class="sixth_section">
         <div class="fourth_section-grid">
-
             <?php
             for ($i = 0; $i < sizeof($gridContents[0]['links']); $i++) {
                 $contents = $gridContents[0];
@@ -114,7 +114,6 @@
                 </div>';
             }
             ?>
-
         </div>
     </section>
     <section class="seventh_section">

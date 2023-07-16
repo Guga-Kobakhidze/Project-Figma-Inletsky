@@ -15,6 +15,7 @@ body {
   object-fit: cover;
   position: absolute;
   z-index: -1;
+  top: 0px;
 }
 
 .BG_image3 {
@@ -22,6 +23,7 @@ body {
   object-fit: cover;
   position: absolute;
   z-index: -1;
+  top: 0;
 }
 
 .container {
@@ -161,6 +163,10 @@ a {
   align-items: center;
   gap: 70px;
   margin-bottom: 86px;
+}
+
+.rotate_arrow-2 {
+  margin-bottom: 80px;
 }
 
 .rotate_link {
@@ -720,6 +726,10 @@ a {
   transform: scale(1.25);
 }
 
+.third_section {
+  margin-top: 112px;
+}
+
 /*** --> Second Page Fourth Section <-- ***/
 
 .img_card {
@@ -913,4 +923,41 @@ a {
   line-height: 190%;
   letter-spacing: 0.75px;
   text-transform: uppercase;
+}
+
+/*** --> third Page second Section <-- ***/
+
+.third_section_page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 234px;
+}
+
+.thirdPage_card h2 {
+  color: white;
+  font-size: clamp(35px, 8vw, 65px);
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 92px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.thirdPage_card p {
+  color: #9ba2b2;
+  font-size: clamp(10px, 3vw, 20px);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.pixel {
+  margin-bottom: 31px;
+}
+
+.thirdpagecontent {
+  transform: translateY(-50px);
 }
