@@ -1,4 +1,4 @@
-<?php include_once "./header.php" ?>
+<?php include_once "./assets/header.php" ?>
 <?php include "./assets/functions/variables.php" ?>
 <img class="BG_image" src="assets/images/Inletsky.png" alt="BG">
 <main class="main">
@@ -13,7 +13,7 @@
     </section>
     <section class="second_section">
         <div class="container">
-            <div class="carousel" data-carousel>
+            <div class="carousel" id="Clients" data-carousel>
                 <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg" alt="arrow" /></button>
                 <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg" alt="arrow" /></button>
                 <ul data-slides>
@@ -72,7 +72,7 @@
             ?>
         </div>
     </section>
-    <section class="Fifth_section">
+    <section class="Fifth_section" id="Testimonials">
         <div class="main_section-content fifth_content">
             <?php getsection($section1, []); ?>
         </div>
@@ -117,7 +117,7 @@
         </div>
     </section>
     <section class="seventh_section">
-        <div class="main_section-content seventh_content">
+        <div class="main_section-content seventh_content" id="Faqs">
             <div class="btn btn2">
                 <img src="assets/images/btnclick.svg" alt="btn" />
                 <a href="#">Question people often asks</a>
@@ -159,4 +159,4 @@
     </section>
 </main>
 
-<?php include_once "./footer.php" ?>
+<?php include "./assets/footer.php" ?>

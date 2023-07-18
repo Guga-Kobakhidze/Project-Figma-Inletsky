@@ -3,16 +3,24 @@
 // --> For Header
 
 $header = [
-    'title' => ['SOLUTIONS', 'DEVELOPERS', 'CUSTOMERS', 'BLOGS'],
+    'title' => ['SOLUTIONS <i class="bx bx-chevron-down"></i></a>
+                <div class="dropdown">
+                <a href="./index.php#Clients">Clients</a>
+                <a href="./index.php#Testimonials">Testimonials</a>
+                <a href="./index.php#Faqs">FAQs</a>
+                </div>', 'DEVELOPERS <i class="bx bx-chevron-down"></i></a>
+                <div class="dropdown dropdownn">
+                <a href="./secondindex.php#Services">Services</a>
+                <a href="./secondindex.php#Project">Project</a>
+                <a href="./secondindex.php#Contact">Contact</a>
+                </div>', 'CUSTOMERS', 'BLOGS'],
     'link' => ['./index.php', './secondindex.php', './thirdindex.php', './fourthindex.php'],
-    'icons' => ['<i class="bx bx-chevron-down"></i>', '<i class="bx bx-chevron-down"></i>', '', ''],
 ];
 
 function getHeader($header)
 {
     for ($i = 0; $i < sizeof($header['title']); $i++) {
-        echo '<li><a href=" ' . $header['link'][$i] . ' ">' . $header['title'][$i] . ' 
-            ' . $header['icons'][$i] . ' </a></li>';
+        echo '<li><a href=" ' . $header['link'][$i] . ' ">' . $header['title'][$i] . '</a></li>';
     }
     return $header;
 }

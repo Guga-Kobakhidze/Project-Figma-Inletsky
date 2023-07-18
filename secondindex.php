@@ -1,4 +1,4 @@
-<?php include_once "./header.php" ?>
+<?php include_once "./assets/header.php" ?>
 <?php include "./assets/functions/variables.php" ?>
 <img class="BG_image" src="assets/images/secondBG.png" alt="BG">
 <main class="main">
@@ -42,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section class="second_section-page">
+    <section class="second_section-page" id="Services">
         <div class="second_section-content">
             <div class="btn btn2">
                 <a href="#">Explore what’s new with inletsky
@@ -175,7 +175,7 @@
             <h1>Project Scope</h1>
         </div>
         <div class="img_cards">
-            <div class="img_card">
+            <div class="img_card" id="Project">
                 <img class="icon_img" src="assets/images/imgcard1.svg" alt="imgcard" />
                 <div class="img_card-text">
                     <h3>Designer</h3>
@@ -417,7 +417,7 @@
                 We are passionate about delivering great software and services.
             </p>
         </div>
-        <div class="container">
+        <div class="container" id="Contact">
             <div class="contact_section-forms">
                 <form action="variebles.php" method="post" class="form_bg">
                     <div class="container">
@@ -444,4 +444,4 @@
     </section>
 </main>
 
-<?php include_once "./footer.php" ?>
+<?php include "./assets/footer.php" ?>

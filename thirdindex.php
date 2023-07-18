@@ -1,4 +1,4 @@
-<?php include "./header.php" ?>
+<?php include_once "./assets/header.php" ?>
 <img class="BG_image3" src="assets/images/thirdpagebg.png" alt="BG">
 <main class="main">
     <section class="main_section">
@@ -153,4 +153,4 @@
         </div>
     </section>
 </main>
-<?php include "./footer.php" ?>
+<?php include "./assets/footer.php" ?>

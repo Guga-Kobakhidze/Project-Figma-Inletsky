@@ -17,7 +17,7 @@
         <div class="header_section">
             <img src="assets/images/logo.svg" alt="logo" />
             <nav class="nav">
-                <ul>
+                <ul class="navigation">
                     <?php getHeader($header); ?>
                 </ul>
             </nav>
