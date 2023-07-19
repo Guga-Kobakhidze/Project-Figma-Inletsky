@@ -1,15 +1,12 @@
 <?php
 
-
 $gridContent = [
     [
         'buttonTitle' => [
             'Design without limits', 'Design without limits', 'See what’s inside our studio',
             'Experience our maps', 'Tell us what to explore'
         ],
-
         'contentTitles' => ['Design', 'Navigation', 'Studio', 'Maps', 'Search'],
-
         'contentText' => ['Style your map with lines, polygons, labels,<br />
         icons, patterns, extrusions, raster & terrain with
         <br />hundreds of options and a powerful expression
@@ -26,12 +23,10 @@ $gridContent = [
         experiences across platforms.', 'Search and geocoding is tied to everything we <br />build —
         maps, navigation, AR — and underlies <br />every app that helps
         humans explore their <br />world.'],
-
         'links' => [
             'Learn more about design →', 'more about navigate →', 'know more about design →',
             'more about maps →', 'discover search →'
         ],
-
         'imgs' => [
             'assets/images/gridimg1.svg', 'assets/images/gridimg2.svg', 'assets/images/gridimg3.svg',
             'assets/images/gridimg4.svg', 'assets/images/gridimg5.svg',
@@ -93,7 +88,6 @@ $borders = [
         'What can I do with the free form camera?', 'Which map projections are supported?', 'What pricing is available with GL JS?',
         'Do I pay by the number of map tiles loaded?', 'Offline Caching', 'What are some upcoming features of Inletsky GL JS?'
     ],
-
     'text' => [' With Atlas, you can self-host Inletsky maps and geocoding APIs,
             Streets, Satellite, and Terrain tilesets, and Inletsky
             <br />Studio on your network, behind a firewall, or even
@@ -170,7 +164,6 @@ $borders = [
             air-gapped. Use Atlas to power on-premises applications using
             <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
             Android.',],
-
     'img' => [
         'assets/images/+.svg', 'assets/images/+.svg', 'assets/images/+.svg', 'assets/images/+.svg',
         'assets/images/+.svg', 'assets/images/+.svg', 'assets/images/+.svg', 'assets/images/+.svg',
@@ -184,9 +177,7 @@ $gridContents = [
         'buttonTitle' => [
             'The vision behind Inletsky', 'Your data is our responsibility', 'Our Newest Product'
         ],
-
         'contentTitles' => ['Vision', 'Data', 'Atlas'],
-
         'contentText' => ["The Inletsky Vision SDK describes every curb, lane, street
         <br /> sign, and road hazard it sees as data. Developers use the
         <br /> SDK's AI-powered semantic segmentation, object
@@ -200,11 +191,9 @@ $gridContents = [
         <br />even air-gapped. Use Atlas to power on-premises
         <br />applications using Inletsky GL JS v2 and Inletsky Maps
         <br />SDKs for iOS and Android."],
-
         'links' => [
             'Discover Vision →', 'more about data →', 'Try atlas →'
         ],
-
         'imgs' => [
             'assets/images/gridimg6.svg', 'assets/images/gridimg7.svg', 'assets/images/gridimg8.svg'
         ],
@@ -226,7 +215,6 @@ $brandLogos3 = [
     'assets/images/fourteenth.svg', 'assets/images/fifteenth.svg'
 ];
 
-
 function getCombinedLogos($brandLogos1, $brandLogos2, $brandLogos3)
 {
     $combinedLogos = array_merge($brandLogos1, $brandLogos2, $brandLogos3);
@@ -235,7 +223,6 @@ function getCombinedLogos($brandLogos1, $brandLogos2, $brandLogos3)
     }
     return $combinedLogos;
 };
-
 
 $sliderCarousel = [
     'first' => [
@@ -368,9 +355,6 @@ $section2 = [
     'text' => 'Create an account or talk to one of our experts.'
 ];
 
-
-
-
 function getSections($mainTitle)
 {
     echo '<div class="btn btn2">
@@ -394,3 +378,291 @@ function getsection($section1, $section2)
             <p>' . $mergeSection['text'] . '</p>';
     return $mergeSection;
 }
+
+$secondPageTitle = [
+    ['<h1>Innovative Web <br />Solutions</h1>
+    <p class="flex_content-text">
+        We are a leading custom web app development company that
+        <br />creates scalable web applications, web portals and
+        solutions with <br />high-quality standards.
+    </p>'],
+    ['<div class="btn btn2">
+    <a href="#">Explore what’s new with inletsky
+        <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+        <h1>Developement Services</h1>
+        <p>Light years ahead of our competitors, Inletsky offers custom web app
+        development services and uses <br />
+        the latest technologies that will compel your customers to spend
+        lavishly on your products.</p>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Build A Success-Driven Development team to protect your</a>
+    </div>
+                <h1>Project Scope</h1>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Need a Roadmap to a Seamless Web </a>
+    </div>
+        <h1 class="content_title">App Development Process</h1>
+        <p>Schedule A 7-Day Trial To Witness Our Quality Standards</p>
+    <div class="btn btn2">
+        <a href="#">Discuss my web app development project →</a>
+    </div>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Our Recent Work</a>
+    </div>
+        <h1>Portfolio</h1>
+        <p>Build. Launch. Grow</p>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Question people often asks</a>
+    </div>
+        <h1 class="content_title">FAQs</h1>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Let Us Know What You’re Looking for</a>
+    </div>
+        <h1 class="contact-title">We’ll Build it for You</h1>
+        <p class="contact-text">
+        We are passionate about delivering great software and services.
+        </p>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Our Favorite Folder Of The </a>
+    </div>
+        <h1>Technologies</h1>']
+];
+
+$contactForms = [
+    '<form action="variebles.php" method="post" class="form_bg">
+        <div class="container">
+            <div class="contact_form">
+                <div class="name_email">
+                    <input type="text" name="name" placeholder="Name*" id="name" />
+                    <input type="email" name="email" placeholder="Email*" id="email" />
+                </div>
+                <input type="text" name="question" placeholder="What are you seeking for?" id="question" />
+                <input type="text" name="question" placeholder="How did you hear about Inletsky?"
+                    id="question" />
+                <textarea name="massege" id="massege" placeholder="Massege"></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <h4>I agree to the Terms & Conditions*</h4>
+                </div>
+                <button type="submit" name="submit" class="btn submit_btn">
+                    Send message →
+                </button>
+            </div>
+        </div>
+    </form>'
+];
+
+$secondBorder = [
+    'title' => ['What is web application development?', 'Why should you outsource web application development services
+                From Inletsky?', 'How much does it cost to develop a web application?', 'Which programming languages are 
+                used for web applications?', 'How long does it take to build a web app?', 'Which is the best custom web 
+                app development company?', 'In which areas does Inletsky provide its services?'],
+    'text' => [
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.',
+        'With Atlas, you can self-host Inletsky maps and geocoding APIs,
+                Streets, Satellite, and Terrain tilesets, and Inletsky
+                <br />Studio on your network, behind a firewall, or even
+                air-gapped. Use Atlas to power on-premises applications using
+                <br />Inletsky GL JS v2 and Inletsky Maps SDKs for iOS and
+                Android.'
+    ],
+];
+
+function getSecondBorder($secondBorder)
+{
+    for ($i = 0; $i < sizeof($secondBorder['text']); $i++) {
+        echo '<div class="border">
+        <div class="title_border">
+            <h3>' . $secondBorder['title'][$i] . '</h3>
+            <img src="assets/images/+.svg" alt="+" />
+        </div>
+        <p class="text_border">' . $secondBorder['text'][$i] . '</p>
+    </div>';
+    }
+    return $secondBorder;
+};
+
+
+$imgCards = [
+    [
+        'img' => 'assets/images/imgcard1.svg',
+        'title' => 'Designer',
+        'text' => 'UI/UX Designers are responsible for the whole appearance and
+                   feel of a web application, <br />including the User Interface
+                   (UI) and User Experience (UX) design. They impact design<br />
+                   decisions since they are in charge of the entire product design,
+                   including color, typeface, <br />navigation, and other elements.',
+        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+                   <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+    ],
+    [
+        'img' => 'assets/images/imgcard2.svg',
+        'title' => 'Backend Developer',
+        'text' => 'Want a clear picture of database structure, data processing, and
+                   third-party integrations? <br />Our backend web applications
+                   developers will manage everything for you in a timely
+                   <br />manner. They actively ensure that data is exchanged
+                   securely and efficiently.',
+        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+                   <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+    ],
+    [
+        'img' => 'assets/images/imgcard3.svg',
+        'title' => 'Frontend Developer',
+        'text' => 'The visual aspect of a web app is the face of your brand. Hire
+                   web app developers <br />to determine how your users will view
+                   and interact. They bring the web app,s layout <br />to life by
+                   building scripts and collaborating with dynamic libraries and
+                   frameworks.',
+        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+                   <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+    ],
+    [
+        'img' => 'assets/images/imgcard4.svg',
+        'title' => 'Product Manager',
+        'text' => 'Our domain-savvy product manager keeps the team focused and
+                   protects the project <br />scope. They are in charge of the
+                   budget, planning, and ensuring that the team is filled
+                   <br />with the greatest minds.',
+        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+                   <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+    ],
+    [
+        'img' => 'assets/images/imgcard5.svg',
+        'title' => 'Quality Assurance Engineer',
+        'text' => 'Our Q/A testing does not occur at the conclusion of the
+                   development process. Instead, the <br />process begins once the
+                   team has created a UI layout and continues till the launch
+                   stage. <br />To guarantee that the design meets the criteria,
+                   our QA assurance engineer will use <br />automated or manual
+                   testing methods.',
+        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+                   <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+    ],
+];
+
+function getimgCards($imgCards)
+{
+    for ($i = 0; $i < sizeof($imgCards); $i++) {
+        $imgcard = $imgCards[0];
+        if ($i == 0) {
+            $cardId = 'Project';
+        } else {
+            $cardId = '';
+        }
+        echo '<div class="img_card" id=" ' . $cardId . ' ">
+        <img class="icon_img" src="' . $imgcard['img'] . '" alt="imgcard" />
+        <div class="img_card-text">
+            <h3>' . $imgcard['title'] . '</h3>
+            <p>' . $imgcard['text'] . '</p>
+             ' . $imgcard['lines'] . '
+        </div>
+    </div>';
+    }
+    return $imgcard;
+}
+
+$galleryImgs = [
+    '<img src="assets/images/img1.png" alt="img" />', '<img src="assets/images/img2.png" alt="img" />',
+    '<img src="assets/images/img3.png" alt="img" />', '<img src="assets/images/img4.png" alt="img" />',
+    '<img src="assets/images/img5.png" alt="img" />', '<img src="assets/images/img6.png" alt="img" />',
+    '<img src="assets/images/img7.png" alt="img" />', '<img src="assets/images/img8.png" alt="img" />',
+    '<img src="assets/images/img9.png" alt="img" />', '<img src="assets/images/img10.png" alt="img" />',
+    '<img src="assets/images/img11.png" alt="img" />', '<img src="assets/images/img12.png" alt="img" />',
+    '<img src="assets/images/img13.png" alt="img" />', '<img src="assets/images/img14.png" alt="img" />',
+    '<img src="assets/images/img15.png" alt="img" />', '<img src="assets/images/img16.png" alt="img" />',
+    '<img src="assets/images/img17.png" alt="img" />', '<img src="assets/images/img18.png" alt="img" />',
+    '<img src="assets/images/img19.png" alt="img" />', '<img src="assets/images/img20.png" alt="img" />',
+    '<img src="assets/images/img21.png" alt="img" />',
+];
+
+$web_cards = [
+    'title' => [
+        'Progressive Web <br />Applications <br />(PWAs)', 'Enterprise Web <br />Application',
+        'Web Portals', 'Web Portals', 'Web Portals', 'Web Portals'
+    ],
+    'text' => ['Invest your hard-earned money in <br />progressive web app
+                development <br />to provide accessible and user-<br />friendly
+                online experiences.', 'Build industry-standard enterprise <br />web apps by using
+                our customer-<br />centric agile methodologies and
+                <br />keep your business competitive.', 'Partner with Inletsky to leverage the <br />competency to
+                host web apps in <br />the cloud, which provides additional
+                <br />benefits such as scale, affordability, <br />security,
+                and high uptime.', 'Partner with Inletsky to leverage the <br />competency to
+                host web apps in <br />the cloud, which provides additional
+                <br />benefits such as scale, affordability, <br />security,
+                and high uptime.', 'Partner with Inletsky to leverage the <br />competency to
+                host web apps in <br />the cloud, which provides additional
+                <br />benefits such as scale, affordability, <br />security,
+                and high uptime.', 'Partner with Inletsky to leverage the <br />competency to
+                host web apps in <br />the cloud, which provides additional
+                <br />benefits such as scale, affordability, <br />security,
+                and high uptime.',],
+];
+
+function getWebCards($web_cards)
+{
+    for ($i = 0; $i < sizeof($web_cards['title']); $i++) {
+        echo '<div class="web_card-border">
+                <div class="web_card">
+                    <img src="assets/images/webcard.svg" alt="webcard" />
+                    <h3>' . $web_cards['title'][$i] . '</h3>
+                    <p>' . $web_cards['text'][$i] . '</p>
+                </div>
+              </div>';
+    }
+    return $web_cards;
+}
+
+$flexContents = [
+    '<p><img src="assets/images/circle.png" alt="circle" />Latest web
+    technologies like Elixir, ReactJS, Laravel, Node.js</p>',
+    '<p><img src="assets/images/circle.png" alt="circle" />Wallet-friendly engagement models to
+    hire developers</p>',
+    '<p><img src="assets/images/circle.png" alt="circle" />Daily
+    collaborative meetings with product managers</p>',
+    '<p><img src="assets/images/circle.png" alt="circle" />Free
+    full-cycle quality assurance</p>',
+];
