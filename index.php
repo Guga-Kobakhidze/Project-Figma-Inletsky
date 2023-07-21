@@ -4,7 +4,7 @@
 <main class="main">
     <section class="main_section">
         <div class="main_section-content">
-            <?php getSections($mainTitle); ?>
+            <?php getSections($title, []); ?>
             <div class="rotate_links">
                 <a class="rotate_link" href="#">Explore Now long</a>
                 <img class="rotate_arrow" src="assets/images/arrow.png" alt="arrow" />
@@ -14,8 +14,10 @@
     <section class="second_section">
         <div class="container">
             <div class="carousel" id="Clients" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg" alt="arrow" /></button>
-                <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg" alt="arrow" /></button>
+                <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg"
+                        alt="arrow" /></button>
+                <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg"
+                        alt="arrow" /></button>
                 <ul data-slides>
                     <?php getSliderCarousel($sliderCarousel, []); ?>
                 </ul>

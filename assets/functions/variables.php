@@ -332,13 +332,20 @@ function getSliderCarousel($sliderCarousel, $sliderCarousel1)
     return $slider;
 }
 
-$mainTitle = [
+$title = [
     'link' => 'Explore what’s new with inletsky',
     'title' => 'BrainNet. GL JS',
     'text' => 'BrainNet. GL JS is a Networking library for vector networking on the
             Web. Its performance, real-<br />time styling, and interactivity
             features set the bar for anyone building fast, immersive tech on the
             <br />web.',
+];
+
+$title2 = [
+    'link' => 'Most cost-effective way possible through cloud IT solutions',
+    'title' => 'Multi-Cloud Solutions',
+    'text' => 'Having your data and applications located in the optimal cloud environment for your workloads not <br>
+            only delivers performance benefits, it also enables you to enjoy huge cost savings.',
 ];
 
 $section1 = [
@@ -355,8 +362,9 @@ $section2 = [
     'text' => 'Create an account or talk to one of our experts.'
 ];
 
-function getSections($mainTitle)
+function getSections($title, $title2)
 {
+    $mainTitle = array_merge($title, $title2);
     echo '<div class="btn btn2">
             <a href="#">' . $mainTitle['link'] . '
             <i class="bx bx-right-arrow-alt"></i></a>
@@ -527,65 +535,68 @@ function getSecondBorder($secondBorder)
 
 $imgCards = [
     [
-        'img' => 'assets/images/imgcard1.svg',
-        'title' => 'Designer',
-        'text' => 'UI/UX Designers are responsible for the whole appearance and
+        [
+            'img' => 'assets/images/imgcard1.png',
+            'title' => 'Designer',
+            'text' => 'UI/UX Designers are responsible for the whole appearance and
                    feel of a web application, <br />including the User Interface
                    (UI) and User Experience (UX) design. They impact design<br />
                    decisions since they are in charge of the entire product design,
                    including color, typeface, <br />navigation, and other elements.',
-        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+            'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
                    <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
-    ],
-    [
-        'img' => 'assets/images/imgcard2.svg',
-        'title' => 'Backend Developer',
-        'text' => 'Want a clear picture of database structure, data processing, and
+        ],
+        [
+            'img' => 'assets/images/imgcard2.png',
+            'title' => 'Backend Developer',
+            'text' => 'Want a clear picture of database structure, data processing, and
                    third-party integrations? <br />Our backend web applications
                    developers will manage everything for you in a timely
                    <br />manner. They actively ensure that data is exchanged
                    securely and efficiently.',
-        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+            'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
                    <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
-    ],
-    [
-        'img' => 'assets/images/imgcard3.svg',
-        'title' => 'Frontend Developer',
-        'text' => 'The visual aspect of a web app is the face of your brand. Hire
+        ],
+        [
+            'img' => 'assets/images/imgcard3.png',
+            'title' => 'Frontend Developer',
+            'text' => 'The visual aspect of a web app is the face of your brand. Hire
                    web app developers <br />to determine how your users will view
                    and interact. They bring the web app,s layout <br />to life by
                    building scripts and collaborating with dynamic libraries and
                    frameworks.',
-        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+            'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
                    <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
-    ],
-    [
-        'img' => 'assets/images/imgcard4.svg',
-        'title' => 'Product Manager',
-        'text' => 'Our domain-savvy product manager keeps the team focused and
+        ],
+        [
+            'img' => 'assets/images/imgcard4.png',
+            'title' => 'Product Manager',
+            'text' => 'Our domain-savvy product manager keeps the team focused and
                    protects the project <br />scope. They are in charge of the
                    budget, planning, and ensuring that the team is filled
                    <br />with the greatest minds.',
-        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+            'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
                    <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
-    ],
-    [
-        'img' => 'assets/images/imgcard5.svg',
-        'title' => 'Quality Assurance Engineer',
-        'text' => 'Our Q/A testing does not occur at the conclusion of the
+        ],
+        [
+            'img' => 'assets/images/imgcard5.png',
+            'title' => 'Quality Assurance Engineer',
+            'text' => 'Our Q/A testing does not occur at the conclusion of the
                    development process. Instead, the <br />process begins once the
                    team has created a UI layout and continues till the launch
                    stage. <br />To guarantee that the design meets the criteria,
                    our QA assurance engineer will use <br />automated or manual
                    testing methods.',
-        'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
+            'lines' => '<img class="line_down" src="assets/images/linedown.svg" alt="line" />
                    <img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
-    ],
+        ],
+    ]
 ];
+
 
 function getimgCards($imgCards)
 {
-    for ($i = 0; $i < sizeof($imgCards); $i++) {
+    for ($i = 0; $i < sizeof($imgCards[0]); $i++) {
         $imgcard = $imgCards[0];
         if ($i == 0) {
             $cardId = 'Project';
@@ -593,11 +604,11 @@ function getimgCards($imgCards)
             $cardId = '';
         }
         echo '<div class="img_card" id=" ' . $cardId . ' ">
-        <img class="icon_img" src="' . $imgcard['img'] . '" alt="imgcard" />
+        <img class="icon_img" src="' . $imgcard[$i]['img'] . '" alt="" />
         <div class="img_card-text">
-            <h3>' . $imgcard['title'] . '</h3>
-            <p>' . $imgcard['text'] . '</p>
-             ' . $imgcard['lines'] . '
+            <h3>' . $imgcard[$i]['title'] . '</h3>
+            <p>' . $imgcard[$i]['text'] . '</p>
+             ' . $imgcard[$i]['lines'] . '
         </div>
     </div>';
     }
