@@ -14,12 +14,10 @@
     <section class="second_section">
         <div class="container">
             <div class="carousel" id="Clients" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg"
-                        alt="arrow" /></button>
-                <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg"
-                        alt="arrow" /></button>
+                <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg" alt="arrow" /></button>
+                <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg" alt="arrow" /></button>
                 <ul data-slides>
-                    <?php getSliderCarousel($sliderCarousel, []); ?>
+                    <?php getSliderCarousel($sliderCarousel, [], []); ?>
                 </ul>
             </div>
         </div>

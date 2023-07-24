@@ -52,7 +52,7 @@
             <?php echo $secondPageTitle[2][0] ?>
         </div>
         <div class="img_cards">
-            <?php getimgCards($imgCards); ?>
+            <?php getimgCards($imgCards, []); ?>
             <a class="img_cards-link" href="#">discuss my web app development project →</a>
         </div>
     </section>
@@ -73,7 +73,7 @@
                     <button class="carousel-button prev" data-carousel-button="prev"><img src="assets/images/arrowleft.svg" alt="arrow" /></button>
                     <button class="carousel-button next" data-carousel-button="next"><img src="assets/images/arrowright.svg" alt="arrow" /></button>
                     <ul data-slides>
-                        <?php getSliderCarousel($sliderCarousel1, []); ?>
+                        <?php getSliderCarousel($sliderCarousel1, [], []); ?>
                     </ul>
                 </div>
             </div>

@@ -298,9 +298,44 @@ $sliderCarousel1 = [
     ]
 ];
 
-function getSliderCarousel($sliderCarousel, $sliderCarousel1)
+$sliderCarousel2 = [
+    'first' => [
+        'img1' => [
+            'assets/images/fourthcarouselleft.png', 'assets/images/fourthcarousel1.png" style="height: 360px;"',
+            'assets/images/fourthcarouselright.png'
+        ],
+        'img2' => [
+            'assets/images/fourthcarousel1.png', 'assets/images/fourthcarouselright.png',
+            'assets/images/fourthcarouselleft.png',
+        ],
+        'img3' => [
+            'assets/images/fourthcarouselright.png', 'assets/images/fourthcarouselleft.png',
+            'assets/images/fourthcarousel1.png" style="height: 360px;"',
+        ],
+        'button' => [
+            'Digital', 'Digital', 'Digital',
+        ],
+        'title' => [
+            'Digital Transformation', 'Transformation', 'Not Digital Transformation',
+        ],
+        'text' => [
+            'Develop a plan for the pace of digital. Inletsky
+            drives digital transformation programs with a
+            complete vision for change.',
+            'Develop a plan for the pace of digital. Inletsky
+            drives digital transformation ',
+            'Inletsky drives digital transformation programs with a
+            complete vision for change.',
+        ],
+        'link' => [
+            'Read more →', 'Read more →', 'Read more →',
+        ],
+    ]
+];
+
+function getSliderCarousel($sliderCarousel, $sliderCarousel1, $sliderCarousel2)
 {
-    $sliders = array_merge($sliderCarousel, $sliderCarousel1);
+    $sliders = array_merge($sliderCarousel, $sliderCarousel1, $sliderCarousel2);
     for ($i = 0; $i < sizeof($sliders['first']['img1']); $i++) {
         $slider = $sliders['first'];
         if ($i == 0) {
@@ -440,7 +475,37 @@ $secondPageTitle = [
         <img src="assets/images/btnclick.svg" alt="btn" />
         <a href="#">Our Favorite Folder Of The </a>
     </div>
-        <h1>Technologies</h1>']
+        <h1>Technologies</h1>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Hybrid and Multi-Cloud environment</a>
+    </div>
+        <h1>Business Cloud Solutions</h1>'],
+    ['<div class="btn btn2">
+        <a href="#">Delivering optimal architecture and performance</a>
+      </div>
+        <h2>Cost-effective way possible <br>
+        through cloud IT solutions.</h2>
+        <p>Designed, implemented, and managed to deliver the highest performing and most secure <br>business cloud
+        solutions, Inletsky Multi-Cloud and Hybrid Cloud Solutions deliver the right <br>application for your
+        modern, dynamic, and flexible working environment.
+        </p>
+        <p>And because Inletsky fully managed Hybrid and Multi-Cloud environments can be <br>reconfigured at the
+        flick of a switch to respond to the changing rhythm of your business, <br>you enjoy complete freedom,
+        flexibility, and control in the cloud.</p>
+      </div>
+      <div class="download_forms">
+        <h3>Free Download: Cloud <br>Best Practice Top Ten <br>Checklist</h3>
+        <p>The top-ten priorities for selecting <br>the right cloud services for your <br>business. Our step-by-step
+        checklist <br>puts you in the know.</p>'],
+    ['<div class="btn btn2">
+        <img src="assets/images/btnclick.svg" alt="btn" />
+        <a href="#">Our Recent Work</a>
+    </div>
+        <h1>Optimal performance</h1>
+        <p>With no need to restrict applications or workloads to one type of business cloud solution, 
+        organisations are <br>adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of 
+        cloud computing solutions with <br>exceptional business outcomes.</p>'],
 ];
 
 $contactForms = [
@@ -593,11 +658,66 @@ $imgCards = [
     ]
 ];
 
+$imgCards2 = [
+    [
+        [
+            'img' => 'assets/images/imgcard1.png',
+            'title' => 'Security by Default',
+            'text' => 'UI/UX Designers are responsible for the whole appearance and
+                   feel of a web application, <br />including the User Interface
+                   (UI) and User Experience (UX) design. They impact design<br />
+                   decisions since they are in charge of the entire product design,
+                   including color, typeface, <br />navigation, and other elements.',
+            'lines' => '<img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+        ],
+        [
+            'img' => 'assets/images/imgcard2.png',
+            'title' => 'Managed Multi Cloud',
+            'text' => 'Want a clear picture of database structure, data processing, and
+                   third-party integrations? <br />Our backend web applications
+                   developers will manage everything for you in a timely
+                   <br />manner. They actively ensure that data is exchanged
+                   securely and efficiently.',
+            'lines' => '<img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+        ],
+        [
+            'img' => 'assets/images/imgcard3.png',
+            'title' => 'Virtual Data Centre',
+            'text' => 'The visual aspect of a web app is the face of your brand. Hire
+                   web app developers <br />to determine how your users will view
+                   and interact. They bring the web app,s layout <br />to life by
+                   building scripts and collaborating with dynamic libraries and
+                   frameworks.',
+            'lines' => '<img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+        ],
+        [
+            'img' => 'assets/images/imgcard4.png',
+            'title' => 'Cloud Migration',
+            'text' => 'Our domain-savvy product manager keeps the team focused and
+                   protects the project <br />scope. They are in charge of the
+                   budget, planning, and ensuring that the team is filled
+                   <br />with the greatest minds.',
+            'lines' => '<img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+        ],
+        [
+            'img' => 'assets/images/imgcard5.png',
+            'title' => 'Security by Default',
+            'text' => 'Our Q/A testing does not occur at the conclusion of the
+                   development process. Instead, the <br />process begins once the
+                   team has created a UI layout and continues till the launch
+                   stage. <br />To guarantee that the design meets the criteria,
+                   our QA assurance engineer will use <br />automated or manual
+                   testing methods.',
+            'lines' => '<img class="line_left" src="assets/images/lineleft.svg" alt="line" />'
+        ],
+    ]
+];
 
-function getimgCards($imgCards)
+function getimgCards($imgCards, $imgCards2)
 {
-    for ($i = 0; $i < sizeof($imgCards[0]); $i++) {
-        $imgcard = $imgCards[0];
+    $imgCardsMerge = array_merge($imgCards, $imgCards2);
+    for ($i = 0; $i < sizeof($imgCardsMerge[0]); $i++) {
+        $imgcard = $imgCardsMerge[0];
         if ($i == 0) {
             $cardId = 'Project';
         } else {
